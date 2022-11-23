@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+<script type="text/javascript">
+  class square
+  {
+    constructor(h,w)
+    {
+      this.height=h;
+      this.width=w;
+    }
+  function  equal(b)
+    {
+      return this.height+this.width===b.height+b.width;
+    }
+  }
+
+  var sq1=new square(2,7);
+  var sq2=new square(4,5);
+//  var x=square.equal(sq1,sq2);
+var x=sq1.equal(sq2);
+  document.write(x);
+
+</script>
+  </body>
+</html>

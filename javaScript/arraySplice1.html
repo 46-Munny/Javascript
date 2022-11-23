@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h2>javascript array methods</h2>
+    <h2>splice()</h2>
+    <p>The splice() method adds new elements to an array and delete the elements</p>
+
+    <button onclick="myfunction()" >try it</button>
+    <script type="text/javascript">
+      var fruits=["banana","orange","apple","mango"];
+      document.write=("original array: "+fruits);
+      function myfunction()
+      {
+        var remove=fruits.splice(2,2,"lemon","kiwi");
+        document.write=("new array: "+fruits);
+        document.write=("removed element array: "+remove);
+      }
+    </script>
+  </body>
+</html>

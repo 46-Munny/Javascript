@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      class person
+      {
+        constructor(n,a)
+        {
+          this.name=n;
+          this.age=a;
+        }
+      }
+
+      class programmer extends person
+      {
+        constructor(n,a,s)
+        {
+          super(n,a);
+          this.salary=s;
+        }
+        show1()
+        {
+          document.write("Name:"+this.name+" Age:"+this.age+" salary:"+this.salary);
+        }
+      }
+      var per=new person("munny",22);
+      var pro=new programmer("Israt",22,200000);
+    pro.show1();
+    document.write("<br/>");
+    document.write(per.name+per.age);
+    </script>
+  </body>
+</html>

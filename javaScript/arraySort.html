@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <p> array using sort() method</p>
+    <button onclick="myfunction()">try it</button>
+
+    <script type="text/javascript">
+      var a,i;
+      a=[12,9,44,3,31];
+      document.write("<br/>"+a);
+
+      function myfunction(){
+          a.sort(function(a,b){return a-b});
+          document.write(a);
+      }
+
+
+    </script>
+  </body>
+</html>

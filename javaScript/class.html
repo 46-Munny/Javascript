@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <script type="text/javascript">
+      class rectangle
+      {
+        constructor(h,w,c)
+        {
+          this.height=h;
+          this.width=w;
+          this.color=c;
+        }
+
+        getarea()
+        {
+          return this.height*this.width;
+        }
+        set area(a)
+        {
+          this.width=a;
+          this.height=a;
+        }
+      }
+
+var rec1=new rectangle(5,7,"blue");
+var r=rec1.getarea();
+var ht=rec1.height;
+document.write(ht+"<br/>");
+document.write(r);
+    </script>
+  </body>
+</html>
